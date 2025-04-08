@@ -1,6 +1,7 @@
 import {Title} from "./Title.tsx";
-import {Students} from "./Students.tsx";
 import {TasksList} from "./TasksList.tsx";
+import {StudentsList} from "./StudentsList.tsx";
+
 
 
 type TasksTypes = {
@@ -25,7 +26,7 @@ export const Tasks = (props: TasksTypes) => {
         <div>
             <Title title={props.title}/>
             <TasksList tasks={props.tasks} />
-            <Students students={[]}/>
+            <StudentsList students={props.students} />
         </div>
     );
 };
