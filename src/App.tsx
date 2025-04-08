@@ -9,6 +9,8 @@
 
 
 
+import {Tasks} from "./Tasks.tsx";
+
 function App() {
     const data1 = {
         title: "What to do",
@@ -126,7 +128,8 @@ function App() {
 
     return (
         <div className="App">
-
+            <Tasks title={data1.title} tasks={data1.tasks} students={data1.students}/>
+            <Tasks title={data2.title} tasks={data2.tasks} students={data2.students}/>
         </div>
     );
 }
