@@ -15,8 +15,8 @@ export const TasksList = ({tasks}: TasksListType) => {
             {tasks.map(task => {
                 return (
                     <li key={task.taskId}>
-                        <input type="checkbox" checked={task.isDone}/>
                         <span>{task.title}</span>
+                        <input type="checkbox" checked={task.isDone}/>
                     </li>
                 )
             })}
